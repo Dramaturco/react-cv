@@ -1,0 +1,49 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: "Didact Gothic", sans-serif;
+}
+.page {
+  width: 21cm;
+  height: 29.7cm;
+  padding: 2cm;
+  margin: 1cm auto;
+  border: 1px #D3D3D3 solid;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "picture education"
+    "facts-and-skills jobs"
+    "facts-and-skills projects";
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "picture education"
+    "facts-and-skills jobs"
+    "facts-and-skills projects";
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+.picture { grid-area: picture;
+background-color: transparent; 
+}
+
+.facts-and-skills { grid-area: facts-and-skills; }
+
+.education { grid-area: education; }
+
+.jobs { grid-area: jobs; }
+
+.projects { grid-area: projects; }
