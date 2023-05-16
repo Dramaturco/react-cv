@@ -40,11 +40,27 @@ li {
 }
 .language-comment {
   border: 1px solid var(--border-color);
-  border-radius: 10px;
-  padding: 0.25rem 0.5rem;
-  font-size: smaller;
+  border-radius: 5px;
+  padding: 0.15rem 0.3rem;
+  font-size: x-small;
   background-color: var(--comment-background);
-  color: var(--border-color)
+  color: var(--border-color);
+  margin-right: 0.25rem;
+}
+.language-box {
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  padding: 1rem;
+  width: 24rem;
+  position: relative;
+  height: 4rem;
+  margin: 1rem;
+  font-size: large;
+}
+.language-comment-box {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 1rem;
 }
 .container-dots {
   display: grid;
