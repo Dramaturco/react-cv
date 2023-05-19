@@ -13,7 +13,7 @@ const Page = () => {
         <div className="box picture">
           <Image imageUrl={imageUrl} alt="Emre Neumann"/>
           <h1>Emre Neumann</h1>
-          <h4>Frontend Developer</h4>
+          <h2>Frontend Developer</h2>
         </div>
         <div className="box facts-and-skills">
 
@@ -23,11 +23,8 @@ const Page = () => {
           <Language name="Turkish" fluency={3} comments={["Native Language", "Read"]}/>
           <Language name="Italian" fluency={2} comments={["Read and write"]}/>
         </div>
-        <div className="box education">
-          <h3>Education</h3>
-        </div>
-        <div className="box jobs">
-          <h3>Jobs</h3>
+        <div className="box timeline">
+          <h3>Timeline</h3>
         </div>
         <div className="box projects">
           <h3>Projects</h3>
