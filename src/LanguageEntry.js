@@ -1,6 +1,6 @@
 import Rating from "./Rating";
 
-const Language = ({ name, fluency, comments }) => {
+const LanguageEntry = ({ name, fluency, comments }) => {
   return (
     <div className="language-box">
       {name}
@@ -14,4 +14,4 @@ const Language = ({ name, fluency, comments }) => {
   );
 };
 
-export default Language;
+export default LanguageEntry;

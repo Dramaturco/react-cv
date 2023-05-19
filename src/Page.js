@@ -1,14 +1,25 @@
+import { useContext } from 'react';
 import Image from './Image'
-import Language from './Language';
+import LanguageContext from './LanguageContext';
+import LanguageList from './LanguageList';
+import LanguageSwitch from './LanguageSwitch';
+import Timeline from './Timeline';
 
-const Page = () => {
+const Page = ({content}) => {
+  const [selectedLanguage, ] = useContext(LanguageContext)
   const imageUrl = new URL(
     'images/emre.jpg?as=webp&width=200',
     import.meta.url
   );
+  const languageData = content[selectedLanguage.code].find(section => section.type === "Languagelist")
+  const timelineData = content[selectedLanguage.code].find(section => section.type === "Timeline")
+  console.log(languageData)
 
   return( 
     <div className="page">
+      <div className="buttons">
+        <LanguageSwitch />
+      </div>
       <div className="grid-container">
         <div className="box picture">
           <Image imageUrl={imageUrl} alt="Emre Neumann"/>
@@ -16,15 +27,12 @@ const Page = () => {
           <h2>Frontend Developer</h2>
         </div>
         <div className="box facts-and-skills">
-
-          <h3>Languages</h3>
-          <Language name="German" fluency={5} comments={["Read", "Write", "Complex Texts", "Technical Jargon", "Native Language"]}/>
-          <Language name="English" fluency={4} comments={["Read", "Write", "Complex Texts", "Technical Jargon"]}/>
-          <Language name="Turkish" fluency={3} comments={["Native Language", "Read"]}/>
-          <Language name="Italian" fluency={2} comments={["Read and write"]}/>
+          <h3>{languageData.title}</h3>
+          <LanguageList list={languageData.content}/>
         </div>
         <div className="box timeline">
-          <h3>Timeline</h3>
+          <h3>{timelineData.title}</h3>
+          <Timeline entries={timelineData.content} />
         </div>
         <div className="box projects">
           <h3>Projects</h3>
