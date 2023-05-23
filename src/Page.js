@@ -13,7 +13,6 @@ const Page = ({content}) => {
   );
   const languageData = content[selectedLanguage.code].find(section => section.type === "Languagelist")
   const timelineData = content[selectedLanguage.code].find(section => section.type === "Timeline")
-  console.log(languageData)
 
   return( 
     <div className="page">

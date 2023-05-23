@@ -47,3 +47,7 @@ background-color: transparent;
 .jobs { grid-area: jobs; }
 
 .projects { grid-area: projects; }
+
+.language-switch {
+  display: none;
+}

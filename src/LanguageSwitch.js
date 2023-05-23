@@ -6,21 +6,14 @@ const languages = [
 ];
 const LanguageSwitch = () => {
   const [selectedLanguage, setLanguage] = useContext(LanguageContext);
-  const selectLanguage = (e) => {
-    setLanguage(languages.find((language) => language.code === e.target.value));
-  };
   return (
-    <select
-      value={selectedLanguage.code}
-      onBlur={selectLanguage}
-      onChange={selectLanguage}
-    >
+    <div className="language-switch">
       {languages.map((language) => (
-        <option key={language.code} value={language.code}>
-          {language.name[selectedLanguage.code]}
-        </option>
+        <div key={language.code} className={`item${selectedLanguage.code === language.code ? " selected" : ""}`} onClick={() => setLanguage(language)}>
+          {language.code}
+        </div>
       ))}
-    </select>
+    </div>
   );
 };
 
