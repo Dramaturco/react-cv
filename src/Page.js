@@ -8,7 +8,7 @@ import Timeline from './Timeline';
 const Page = ({content}) => {
   const [selectedLanguage, ] = useContext(LanguageContext)
   const imageUrl = new URL(
-    'images/emre.jpg?as=webp&width=200',
+    '../assets/images/emre.jpg?as=webp&width=200',
     import.meta.url
   );
   const languageData = content[selectedLanguage.code].find(section => section.type === "Languagelist")
