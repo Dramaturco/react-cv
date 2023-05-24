@@ -37,7 +37,6 @@ li {
   right: 0;
   bottom: 0;
   left: 0;
-
 }
 .language-comment {
   border: 1px solid var(--border-color);
@@ -131,6 +130,10 @@ li {
   grid-template-columns: 1fr 5fr;
   margin-bottom: 2rem;
 }
+.timeline-entry:not(:last-child) {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 4rem;
+}
 .timeline-entry h4 {
   font-size: larger;
   margin: 0;
@@ -138,7 +141,7 @@ li {
 }
 .timeline-date {
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 1rem 0rem;
 }
 .month {
