@@ -1,7 +1,7 @@
 import TimelineDate from "./TimelineDate";
 const TimelineEntry = ({ title, text, start, end, type }) => {
   return(
-    <div key={title} className="timeline-entry">
+    <div className="timeline-entry">
       <div className="timeline-left-column">
         <TimelineDate date={start}/>
         <div className="vertical-line"></div>

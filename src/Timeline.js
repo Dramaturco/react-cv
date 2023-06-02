@@ -9,6 +9,7 @@ const Timeline = ({ entries }) => {
           end={entry.end}
           type={entry.type}
           text={entry.text}
+          key={entry.title}
         />
       ))}
     </div>

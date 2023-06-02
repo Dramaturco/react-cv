@@ -9,7 +9,7 @@ const LanguageList = ({ list }) => {
           name={language.name}
           fluency={language.fluency}
           comments={language.comments}
-          key={language.code}
+          key={language.name}
         />
       ))}
     </Fragment>
