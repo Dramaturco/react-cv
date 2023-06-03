@@ -10,7 +10,10 @@
   color: white;
   margin-right: 0.25rem;
 }
-.language-box {
+.language-name {
+  cursor: pointer;
+}
+.language-box.expanded {
   border: 2px solid var(--border-color);
   border-radius: 5px;
   padding: 1rem;
