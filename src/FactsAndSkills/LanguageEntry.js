@@ -1,4 +1,4 @@
-import Rating from "./Rating";
+import {Rating} from "../Generic";
 
 const LanguageEntry = ({ name, fluency, comments }) => {
   return (

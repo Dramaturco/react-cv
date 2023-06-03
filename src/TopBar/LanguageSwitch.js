@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import LanguageContext from "./LanguageContext";
+import LanguageContext from "../LanguageContext";
 const languages = [
   { code: "en", name: { en: "English", de: "Englisch" } },
   { code: "de", name: { en: "German", de: "Deutsch" } },

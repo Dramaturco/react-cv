@@ -1,3 +1,8 @@
+@import url("layout.css");
+@import url("./FactsAndSkills/factsAndSkills.css");
+@import url("Timeline/timeline.css");
+@import url("TopBar/TopBar.css");
+
 :root {
   --border-color: #3f59ac;
   --box-background: #eef2f0;
@@ -38,59 +43,8 @@ li {
   bottom: 0;
   left: 0;
 }
-.language-comment {
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  padding: 0.15rem 0.3rem;
-  font-size: x-small;
-  background-color: var(--comment-background);
-  color: white;
-  margin-right: 0.25rem;
-}
-.language-box {
-  border: 2px solid var(--border-color);
-  border-radius: 5px;
-  padding: 1rem;
-  width: 24rem;
-  position: relative;
-  height: 4rem;
-  margin: 1rem;
-  font-size: large;
-}
-.language-comment-box {
-  position: absolute;
-  right: 0.5rem;
-  bottom: 1rem;
-}
-.container-dots {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0.25em;
-  width: 5.5em;
-  height: 1em;
-}
-.dot {
-  border-radius: 50%;
-  width: 100%;
-  border: 1px solid var(--border-color);
-}
-.dot.filled {
-  background-color: var(--accent-color);
-}
 
-.dot.empty {
-  background-color: var(--box-background);
-}
-
-.box {
-  background-color: var(--box-background);
-  color: var(--text-color);
-  padding: 1.5rem;
-  border: 2px solid var(--border-color);
-  border-radius: 2px;
-}
-.box img {
+.box.picture img {
   border-radius: 50%;
   display: block;
   margin: auto;
@@ -107,94 +61,5 @@ li {
 
 .picture h1 {
   margin-bottom: 0;
-  color: var(--border-color);
-}
-
-.facts-and-skills {
-  grid-area: facts-and-skills;
-}
-
-.education {
-  grid-area: education;
-}
-
-.jobs {
-  grid-area: jobs;
-}
-
-.projects {
-  grid-area: projects;
-}
-.timeline-entry {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  margin-bottom: 2rem;
-}
-.timeline-entry:not(:last-child) {
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 4rem;
-}
-.timeline-entry h4 {
-  font-size: larger;
-  margin: 0;
-  /*text-decoration: underline var(--comment-background);*/
-}
-.timeline-date {
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  padding: 1rem 0rem;
-}
-.month {
-  font-size: large;
-}
-.year {
-  font-size: larger;
-}
-.vertical-line {
-  width: 0px;
-  height: 60%;
-  border: 1px solid var(--accent-color);
-  margin: auto;
-}
-.timeline-left-column {
-  padding: 0 1rem;
-}
-.timeline-right-column {
-  padding: 1rem;
-  position: relative;
-}
-.timeline-entry-type {
-  position: absolute;
-  left: 1rem;
-  border: 1px solid var(--border-color);
-  padding: 0.25rem 0.5rem;
-  border-radius: 10px;
-  background-color: var(--comment-background);
-  color: white;
-}
-.language-switch {
-  display: flex;
-  width: 4rem;
-  border: 1px solid var(--border-color);
-  border-radius: var(--language-switch-border-radius);
-}
-.language-switch .item:first-child {
-  border-top-left-radius: var(--language-switch-border-radius);
-  border-bottom-left-radius: var(--language-switch-border-radius);
-  border-right: 1px solid var(--border-color);
-}
-.language-switch .item:last-child {
-  border-top-right-radius: var(--language-switch-border-radius);
-  border-bottom-right-radius: var(--language-switch-border-radius);
-}
-.language-switch .item {
-  cursor: pointer;
-  background-color: var(--box-background);
-  text-align: center;
-  width: 50%;
-  padding: 0.25rem;
-}
-.language-switch .item.selected {
-  background-color: var(--accent-color);
   color: var(--border-color);
 }

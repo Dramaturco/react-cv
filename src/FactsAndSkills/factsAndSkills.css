@@ -1,0 +1,47 @@
+.facts-and-skills {
+  grid-area: facts-and-skills;
+}
+.language-comment {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 0.15rem 0.3rem;
+  font-size: x-small;
+  background-color: var(--comment-background);
+  color: white;
+  margin-right: 0.25rem;
+}
+.language-box {
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  padding: 1rem;
+  width: 24rem;
+  position: relative;
+  height: 4rem;
+  margin: 1rem;
+  font-size: large;
+}
+.language-comment-box {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 1rem;
+}
+.container-dots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0.25em;
+  width: 5.5em;
+  height: 1em;
+}
+.dot {
+  border-radius: 50%;
+  width: 100%;
+  border: 1px solid var(--border-color);
+}
+.dot.filled {
+  background-color: var(--accent-color);
+}
+
+.dot.empty {
+  background-color: var(--box-background);
+}

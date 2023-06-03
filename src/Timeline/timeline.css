@@ -1,0 +1,47 @@
+.timeline-entry {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-bottom: 2rem;
+}
+.timeline-entry:not(:last-child) {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 4rem;
+}
+.timeline-entry h4 {
+  font-size: larger;
+  margin: 0;
+  /*text-decoration: underline var(--comment-background);*/
+}
+.timeline-date {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 1rem 0rem;
+}
+.month {
+  font-size: large;
+}
+.year {
+  font-size: larger;
+}
+.vertical-line {
+  width: 0px;
+  height: 60%;
+  border: 1px solid var(--accent-color);
+  margin: auto;
+}
+.timeline-left-column {
+  padding: 0 1rem;
+}
+.timeline-right-column {
+  padding: 1rem;
+  position: relative;
+}
+.timeline-entry-type {
+  position: absolute;
+  left: 1rem;
+  border: 1px solid var(--border-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  background-color: var(--comment-background);
+  color: white;
+}
