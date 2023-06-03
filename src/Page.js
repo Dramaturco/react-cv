@@ -1,10 +1,12 @@
 import { useContext } from "react";
+import { AiFillGithub, AiFillPrinter } from "react-icons/ai";
 import Image from "./Image";
 import LanguageContext from "./LanguageContext";
 import LanguageList from "./LanguageList";
 import LanguageSwitch from "./LanguageSwitch";
 import Timeline from "./Timeline";
 import ProjectList from "./ProjectList";
+import ButtonLink from "./ButtonLink";
 
 const Page = ({ content }) => {
   const [selectedLanguage] = useContext(LanguageContext);
@@ -26,6 +28,8 @@ const Page = ({ content }) => {
     <div className="page">
       <div className="buttons">
         <LanguageSwitch />
+        <ButtonLink url="javascript:window.print()" className="no-print"><AiFillPrinter /></ButtonLink>
+        <ButtonLink className="no-print"><AiFillGithub /></ButtonLink>
       </div>
       <div className="grid-container">
         <div className="box picture">

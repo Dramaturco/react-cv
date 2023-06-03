@@ -36,6 +36,9 @@ body {
   size: A4;
   margin: 0;
 }
+.no-print {
+  display: none;
+}
 .picture { grid-area: picture;
 background-color: transparent; 
 }
