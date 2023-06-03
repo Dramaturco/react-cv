@@ -3,6 +3,7 @@
 @import url("Timeline/timeline.css");
 @import url("TopBar/TopBar.css");
 @import url("Projects/Projects.css");
+@import url("Generic/generic.css");
 
 :root {
   --border-color: #3f59ac;

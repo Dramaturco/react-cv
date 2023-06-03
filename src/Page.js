@@ -5,6 +5,7 @@ import { LanguageList } from "./FactsAndSkills";
 import { Timeline } from "./Timeline";
 import { ProjectList } from "./Projects";
 import { TopBar } from "./TopBar";
+import ToolTip from "./Generic/ToolTip";
 
 const Page = ({ content }) => {
   const [selectedLanguage] = useContext(LanguageContext);
@@ -24,11 +25,13 @@ const Page = ({ content }) => {
 
   return (
     <div className="page">
-      <TopBar/>
+      <TopBar />
       <div className="grid-container">
         <div className="box picture">
           <Image imageUrl={imageUrl} alt="Emre Neumann" />
+
           <h1>Emre Neumann</h1>
+
           <h2>Frontend Developer</h2>
         </div>
         {languageData && (
