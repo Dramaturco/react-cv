@@ -20,16 +20,16 @@
   display: flex;
   width: 4rem;
   border: 1px solid var(--border-color);
-  border-radius: var(--language-switch-border-radius);
+  border-radius: var(--border-radius);
 }
 .language-switch .item:first-child {
-  border-top-left-radius: var(--language-switch-border-radius);
-  border-bottom-left-radius: var(--language-switch-border-radius);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
   border-right: 1px solid var(--border-color);
 }
 .language-switch .item:last-child {
-  border-top-right-radius: var(--language-switch-border-radius);
-  border-bottom-right-radius: var(--language-switch-border-radius);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
 .language-switch .item {
   cursor: pointer;

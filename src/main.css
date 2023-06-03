@@ -2,6 +2,7 @@
 @import url("./FactsAndSkills/factsAndSkills.css");
 @import url("Timeline/timeline.css");
 @import url("TopBar/TopBar.css");
+@import url("Projects/Projects.css");
 
 :root {
   --border-color: #3f59ac;
@@ -12,7 +13,7 @@
   --accent-color-tint: #ffd278;
   --text-color: #220110;
   --comment-background: #96d8c3;
-  --language-switch-border-radius: 5px;
+  --border-radius: 5px;
 }
 
 body {
