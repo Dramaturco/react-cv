@@ -1,12 +1,10 @@
 import { useContext } from "react";
-import { AiFillGithub, AiFillPrinter } from "react-icons/ai";
 import { Image } from "./Generic";
 import LanguageContext from "./LanguageContext";
 import { LanguageList } from "./FactsAndSkills";
-import LanguageSwitch from "./TopBar/LanguageSwitch";
 import { Timeline } from "./Timeline";
 import { ProjectList } from "./Projects";
-import ButtonLink from "./Generic/ButtonLink";
+import { TopBar } from "./TopBar";
 
 const Page = ({ content }) => {
   const [selectedLanguage] = useContext(LanguageContext);
@@ -26,15 +24,7 @@ const Page = ({ content }) => {
 
   return (
     <div className="page">
-      <div className="buttons">
-        <LanguageSwitch />
-        <ButtonLink onClick={() => window.print()} className="no-print">
-          <AiFillPrinter />
-        </ButtonLink>
-        <ButtonLink className="no-print">
-          <AiFillGithub />
-        </ButtonLink>
-      </div>
+      <TopBar/>
       <div className="grid-container">
         <div className="box picture">
           <Image imageUrl={imageUrl} alt="Emre Neumann" />

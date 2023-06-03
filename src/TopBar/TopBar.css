@@ -1,3 +1,21 @@
+.button-bar {
+  display: flex;
+}
+.button-bar-section {
+  flex-grow: 1;
+}
+.button-links {
+  text-align: right;
+  font-size: x-large;
+}
+.button-links a{
+  all: unset;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+.button-links a:hover{
+  color: var(--border-color)
+}
 .language-switch {
   display: flex;
   width: 4rem;
@@ -22,5 +40,11 @@
 }
 .language-switch .item.selected {
   background-color: var(--accent-color);
-  color: var(--border-color);
+}
+.language-switch .item:hover {
+  background-color: var(--box-background-tint)
+}
+.language-switch .item.selected:hover {
+  background-color: var(--accent-color);
+  cursor: default;
 }
