@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ToolTip = ({ children, text }) => {
-  const [hover, setHover] = useState(true);
+  const [hover, setHover] = useState(false);
   const [animationClass, setAnimationClass] = useState("");
   return (
     <div
@@ -10,10 +10,7 @@ const ToolTip = ({ children, text }) => {
         setHover(true);
         setAnimationClass("fade-in");
       }}
-      onMouseLeave={() => {
-        setTimeout(() => setHover(false), 750);
-        setAnimationClass("fade-out");
-      }}
+      onMouseLeave={() => setHover(false)}
     >
       {children}
       {hover && <div className={`tooltip-box ${animationClass}`}>{text}</div>}

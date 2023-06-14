@@ -1,5 +1,6 @@
 .facts-and-skills {
-  grid-area: facts-and-skills;
+  grid-column: 1;
+  grid-row: 1;
 }
 .language-comment {
   border: 1px solid var(--border-color);
@@ -11,16 +12,14 @@
   margin-right: 0.25rem;
 }
 .language-name {
-  cursor: pointer;
+  cursor: default;
 }
-.language-box.expanded {
-  border: 2px solid var(--border-color);
-  border-radius: 5px;
+.language-box {
   padding: 1rem;
   width: 24rem;
   position: relative;
   height: 4rem;
-  margin: 1rem;
+  margin-bottom: 0.25rem;
   font-size: large;
 }
 .language-comment-box {

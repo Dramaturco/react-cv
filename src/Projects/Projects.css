@@ -1,3 +1,6 @@
+.projects {
+  grid-column: 2;
+}
 .project-entry {
   position: relative;
   padding: 2rem 0 2rem 0;

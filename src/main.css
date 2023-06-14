@@ -48,7 +48,7 @@ li {
   left: 0;
 }
 
-.box.picture img {
+.picture img {
   border-radius: 50%;
   display: block;
   margin: auto;
@@ -57,10 +57,9 @@ li {
 }
 
 .picture {
-  grid-area: picture;
-  background-color: transparent;
+
   text-align: center;
-  border: none;
+
 }
 
 .picture h1 {

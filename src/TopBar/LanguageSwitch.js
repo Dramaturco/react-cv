@@ -7,7 +7,7 @@ const languages = [
 const LanguageSwitch = () => {
   const [selectedLanguage, setLanguage] = useContext(LanguageContext);
   return (
-    <div className="language-switch">
+    <div className="language-switch no-print">
       {languages.map((language) => (
         <div key={language.code} className={`item${selectedLanguage.code === language.code ? " selected" : ""}`} onClick={() => setLanguage(language)}>
           {language.code}

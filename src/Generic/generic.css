@@ -1,5 +1,6 @@
 .tooltip-wrapper {
   position: relative;
+  cursor: default;
 }
 .tooltip-box {
   position: absolute;

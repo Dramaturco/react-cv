@@ -1,6 +1,10 @@
+.timeline {
+  grid-column: 2;
+  grid-row-start: 1;
+}
 .timeline-entry {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
   margin-bottom: 2rem;
 }
 .timeline-entry:not(:last-child) {
