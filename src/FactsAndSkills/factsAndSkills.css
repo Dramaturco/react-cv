@@ -1,6 +1,7 @@
 .facts-and-skills {
   grid-column: 1;
-  grid-row: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 .language-comment {
   border: 1px solid var(--border-color);

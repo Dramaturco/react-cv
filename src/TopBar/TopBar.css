@@ -1,5 +1,6 @@
 .button-bar {
   display: flex;
+  padding: 1.5rem 0;
 }
 .button-bar-section {
   flex-grow: 1;
