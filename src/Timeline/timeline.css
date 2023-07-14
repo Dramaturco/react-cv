@@ -3,13 +3,7 @@
   grid-row-start: 1;
 }
 .timeline-entry {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
   margin-bottom: 2rem;
-}
-.timeline-entry:not(:last-child) {
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 4rem;
 }
 .timeline-entry h4 {
   font-size: larger;
@@ -29,7 +23,7 @@
 }
 .vertical-line {
   width: 0px;
-  height: 60%;
+  height: 5rem;
   border: 1px solid var(--accent-color);
   margin: auto;
 }

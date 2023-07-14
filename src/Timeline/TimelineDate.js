@@ -1,9 +1,9 @@
 const TimelineDate = ({date}) => {
   return (
-    <div className="timeline-date">
-      {date.month && <span className="month">{date.month} </span>}
-      <span className="year">{date.year}</span>
-    </div>
+    <span>
+      {date.month && <span>{date.month} </span>}
+      <span>{date.year}</span>
+    </span>
   )
 }
 export default TimelineDate

@@ -10,11 +10,13 @@
   --box-background: #eef2f0;
   --box-background-tint: #dde6e2;
   --body-background: white;
-  --accent-color: #f4b842;
+  --accent-color: #6736CF;
   --accent-color-tint: #ffd278;
   --text-color: #220110;
   --comment-background: #96d8c3;
   --border-radius: 5px;
+  --primary-color: #98C9E4;
+  --secondary-color: #36CFB4;
 }
 
 body {

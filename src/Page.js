@@ -1,6 +1,7 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Image } from "./Generic";
 import LanguageContext from "./LanguageContext";
+import ThemeContext from "./ThemeContext";
 import { LanguageList, SkillList } from "./FactsAndSkills";
 import { Timeline } from "./Timeline";
 import { ProjectList } from "./Projects";
@@ -8,6 +9,7 @@ import { Intro } from "./TopBar";
 
 const Page = ({ content }) => {
   const [selectedLanguage] = useContext(LanguageContext);
+  const [theme, setTheme] = useContext(ThemeContext);
   const imageUrl = new URL(
     "../assets/images/emre-2.png?as=webp&width=282",
     import.meta.url
@@ -20,7 +22,7 @@ const Page = ({ content }) => {
   );
   const skillData = content[selectedLanguage.code].find(
     (section) => section.type === "Skills"
-  )
+  );
   const timelineData = content[selectedLanguage.code].find(
     (section) => section.type === "Timeline"
   );
@@ -29,48 +31,32 @@ const Page = ({ content }) => {
   );
 
   return (
-    <div className="page">
-      <Intro text={introData.content.text} imageUrl={imageUrl} alt="Emre Neumann"/>
-      <div className="grid-container">
-        {languageData && (
-          <div className="box facts-and-skills">
-            <section className="picture">
-              <Image imageUrl={imageUrl} alt="Emre Neumann" />
-
-              <h1>Emre Neumann</h1>
-
-              <h2>Frontend Developer</h2>
-            </section>
-            <section>
-              <h3>{languageData.title}</h3>
-              <LanguageList list={languageData.content} />
-            </section>
-            <section>
-              <h3>{skillData.title}</h3>
-              {skillData.content.map((skillset) => (
-                <SkillList
-                  skills={skillset.skills}
-                  proficiency={skillset.proficiency}
-                  tooltip={skillset.tooltip}
-                />
-              ))}
-            </section>
-          </div>
-        )}
-        {timelineData && (
-          <div className="box timeline">
+    //wrap in context provider for theme context
+    <ThemeContext.Provider value={theme}>
+      <div className="page">
+        <Intro
+          text={introData.content.text}
+          imageUrl={imageUrl}
+          alt="Emre Neumann"
+        />
+        <div className="grid-container">
+          <div className="left-column">
             <h3>{timelineData.title}</h3>
             <Timeline entries={timelineData.content} />
           </div>
-        )}
-        {projectData && (
-          <div className="box projects">
-            <h3>{projectData.title}</h3>
-            <ProjectList projects={projectData.content} />
+          <div className="right-column">
+            <h3>{skillData.title}</h3>
+            {skillData.content.map((skillset) => (
+              <SkillList
+                skills={skillset.skills}
+                proficiency={skillset.proficiency}
+                tooltip={skillset.tooltip}
+              />
+            ))}
           </div>
-        )}
+        </div>
       </div>
-    </div>
+    </ThemeContext.Provider>
   );
 };
 
