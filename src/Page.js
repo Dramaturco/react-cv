@@ -1,5 +1,4 @@
 import { useContext, useEffect } from "react";
-import { Image } from "./Generic";
 import LanguageContext from "./LanguageContext";
 import ThemeContext from "./ThemeContext";
 import { LanguageList, SkillList } from "./FactsAndSkills";
@@ -29,6 +28,18 @@ const Page = ({ content }) => {
   const projectData = content[selectedLanguage.code].find(
     (section) => section.type === "Projects"
   );
+
+  //map projects onto timeline data matching projects by name
+  timelineData.content = timelineData.content.map((entry) => {
+    if(entry.projects){
+      entry.projects = entry.projects.map((project) =>
+        projectData.content.find((projectEntry) => projectEntry.name === project)
+      );
+    }
+    return entry;
+  });
+
+  console.log(timelineData)
 
   return (
     //wrap in context provider for theme context

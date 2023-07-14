@@ -13,6 +13,7 @@ const Timeline = ({ entries }) => {
               end={entry.end}
               type={entry.type}
               text={entry.text}
+              projects={entry.projects}
               key={entry.title}
             />
             {index < entries.length - 1 && (
