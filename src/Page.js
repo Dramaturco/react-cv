@@ -4,12 +4,12 @@ import LanguageContext from "./LanguageContext";
 import { LanguageList, SkillList } from "./FactsAndSkills";
 import { Timeline } from "./Timeline";
 import { ProjectList } from "./Projects";
-import { TopBar } from "./TopBar";
+import { Intro } from "./TopBar";
 
 const Page = ({ content }) => {
   const [selectedLanguage] = useContext(LanguageContext);
   const imageUrl = new URL(
-    "../assets/images/emre.jpg?as=webp&width=200",
+    "../assets/images/emre-2.png?as=webp&width=282",
     import.meta.url
   );
   const languageData = content[selectedLanguage.code].find(
@@ -27,7 +27,7 @@ const Page = ({ content }) => {
 
   return (
     <div className="page">
-      <TopBar />
+      <Intro text="Test" imageUrl={imageUrl} alt="Emre Neumann"/>
       <div className="grid-container">
         {languageData && (
           <div className="box facts-and-skills">

@@ -1,5 +1,7 @@
 import TopBar from "./TopBar";
+import Intro from "./Intro";
 
 export {
-  TopBar
+  TopBar,
+  Intro
 }
