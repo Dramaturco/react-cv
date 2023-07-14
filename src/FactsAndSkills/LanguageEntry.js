@@ -1,29 +1,25 @@
 import { Rating } from "../Generic";
 import { useState, Fragment } from "react";
-import ToolTip from "../Generic/ToolTip";
+import SkillName from "../Generic/SkillName";
+import { styled } from "styled-components";
 
 const LanguageEntry = ({ name, fluency, comments }) => {
   const [expanded, setExpanded] = useState(false);
 
-  return (
+  const Entry = styled.div`
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+    `
 
-      <ToolTip
-        text={
-          <div className="language-box">
-            <span>{name}</span>
-            <Rating value={fluency} max={5} />
-            <div className="language-comment-box no-print">
-              {comments.map((comment) => (
-                <span key={comment} className="language-comment">
-                  {comment}
-                </span>
-              ))}
-            </div>
-          </div>
-        }
-      >
-        <span className="language-name">{name}</span>
-      </ToolTip>
+  return (
+    <Entry>
+      <SkillName gradient>{name}</SkillName>
+
+        <Rating value={fluency} max={5} />
+
+    </Entry>
   );
 };
 

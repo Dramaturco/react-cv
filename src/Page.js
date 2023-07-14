@@ -11,7 +11,7 @@ const Page = ({ content }) => {
   const [selectedLanguage] = useContext(LanguageContext);
   const [theme, setTheme] = useContext(ThemeContext);
   const imageUrl = new URL(
-    "../assets/images/emre-2.png?as=webp&width=282",
+    "../assets/images/emre.jpg?as=webp&width=256",
     import.meta.url
   );
   const introData = content[selectedLanguage.code].find(
@@ -45,6 +45,8 @@ const Page = ({ content }) => {
             <Timeline entries={timelineData.content} />
           </div>
           <div className="right-column">
+            <h3>{languageData.title}</h3>
+            <LanguageList list={languageData.content} />
             <h3>{skillData.title}</h3>
             {skillData.content.map((skillset) => (
               <SkillList
