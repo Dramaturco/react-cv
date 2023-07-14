@@ -38,10 +38,9 @@ li {
   width: 80%;
 }
 .page {
-  width: 80%;
-  height: 90vh;
+  width: 90rem;
   position: relative;
-  margin: auto;
+  margin: 0 auto 0 auto;
   top: 0;
   right: 0;
   bottom: 0;

@@ -8,5 +8,5 @@
 .grid-container {
   display: grid;
   grid-gap: 1%;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 1fr 1fr;
 }

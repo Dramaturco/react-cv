@@ -3,17 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 function Intro({ text, imageUrl }) {
-  const GradientBox = styled.div`
-    width: 90rem;
-    height: 44.875rem;
-    flex-shrink: 0;
-    border-radius: 0rem 0rem 1rem 1rem;
-    background: linear-gradient(77deg, #98c9e4 0%, #36cfb4 100%);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 4rem 6rem;
-    position: relative;
-    margin: 0 auto;
-  `;
+
 
   const Text = styled.p`
     color: #fff;
@@ -35,10 +25,10 @@ function Intro({ text, imageUrl }) {
   `;
 
   return (
-    <GradientBox>
-      <Text>{text}</Text>
+    <div class="intro">
+      <Text dangerouslySetInnerHTML={{ __html: text}}></Text>
       <Image />
-    </GradientBox>
+    </div>
   );
 }
 

@@ -12,6 +12,9 @@ const Page = ({ content }) => {
     "../assets/images/emre-2.png?as=webp&width=282",
     import.meta.url
   );
+  const introData = content[selectedLanguage.code].find(
+    (section) => section.type === "Intro"
+  );
   const languageData = content[selectedLanguage.code].find(
     (section) => section.type === "Languagelist"
   );
@@ -27,7 +30,7 @@ const Page = ({ content }) => {
 
   return (
     <div className="page">
-      <Intro text="Test" imageUrl={imageUrl} alt="Emre Neumann"/>
+      <Intro text={introData.content.text} imageUrl={imageUrl} alt="Emre Neumann"/>
       <div className="grid-container">
         {languageData && (
           <div className="box facts-and-skills">
