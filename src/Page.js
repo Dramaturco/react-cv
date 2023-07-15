@@ -35,6 +35,10 @@ const Page = ({ content }) => {
       entry.projects = entry.projects.map((project) =>
         projectData.content.find((projectEntry) => projectEntry.name === project)
       );
+      entry.projects = {
+        content: entry.projects,
+        title: projectData.title
+      }
     }
     return entry;
   });

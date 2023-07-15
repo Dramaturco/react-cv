@@ -1,7 +1,8 @@
 import ProjectEntry from "./ProjectEntry";
-const ProjectList = ({ projects }) => {
+const ProjectList = ({ projects, title }) => {
   return (
     <div>
+      <h3>{title}</h3>
       {projects.map((project) => (
         <ProjectEntry
           key={project.name}

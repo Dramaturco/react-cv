@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import TimelineDate from "./TimelineDate";
 import ThemeContext from "../ThemeContext";
 import { useContext } from "react";
-import ProjectEntry from "../Projects/ProjectEntry";
+import { ProjectList } from "../Projects";
 const TimelineEntry = ({ title, text, start, end, type, projects }) => {
   const theme = useContext(ThemeContext);
   const Title = styled.h4`
@@ -25,17 +25,7 @@ const TimelineEntry = ({ title, text, start, end, type, projects }) => {
         </Title>
         <p>{text}</p>
       </div>
-      <h3>Projekte:</h3>
-      {projects &&
-        projects.map((project) => (
-          <ProjectEntry
-            name={project.name}
-            key={project.name}
-            abstract={project.abstract}
-            technologies={project.technologies}
-            description={project.description}
-          />
-        ))}
+      {projects && <ProjectList title={projects.title} projects={projects.content} />}
     </div>
   );
 };
