@@ -1,18 +1,19 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import LanguageContext from "./LanguageContext";
 import ThemeContext from "./ThemeContext";
 import { LanguageList, SkillList } from "./FactsAndSkills";
 import { Timeline } from "./Timeline";
-import { ProjectList } from "./Projects";
 import { Intro } from "./TopBar";
 
 const Page = ({ content }) => {
   const [selectedLanguage] = useContext(LanguageContext);
   const [theme, setTheme] = useContext(ThemeContext);
+
   const imageUrl = new URL(
-    "../assets/images/emre.jpg?as=webp&width=256",
+    "./Defaults/cat.jpg?as=webp&width=256",
     import.meta.url
   );
+
   const introData = content[selectedLanguage.code].find(
     (section) => section.type === "Intro"
   );
@@ -29,7 +30,6 @@ const Page = ({ content }) => {
     (section) => section.type === "Projects"
   );
 
-  //map projects onto timeline data matching projects by name
   timelineData.content = timelineData.content.map((entry) => {
     if(entry.projects){
       entry.projects = entry.projects.map((project) =>
@@ -46,13 +46,11 @@ const Page = ({ content }) => {
   console.log(timelineData)
 
   return (
-    //wrap in context provider for theme context
     <ThemeContext.Provider value={theme}>
       <div className="page">
         <Intro
           text={introData.content.text}
           imageUrl={imageUrl}
-          alt="Emre Neumann"
         />
         <div className="grid-container">
           <div className="left-column">

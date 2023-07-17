@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import ToolTip from "../Generic/ToolTip";
 
 function Intro({ text, imageUrl }) {
-
-
   const Text = styled.p`
     color: #fff;
     font-size: 4rem;
@@ -13,21 +12,23 @@ function Intro({ text, imageUrl }) {
     line-height: 4.625rem; /* 115.625% */
   `;
 
-  const Image = styled.img`
+  const StyledImage = styled.div`
     width: 16rem;
     height: 16rem;
     border-radius: 1rem;
     background: url(${imageUrl}), lightgray 50% / cover no-repeat;
-    box-shadow: 0px 3px 9px 0px rgba(103, 54, 207, 0.50);
+    box-shadow: 0px 3px 9px 0px rgba(103, 54, 207, 0.5);
     position: absolute;
     bottom: -8rem;
     right: 10rem;
   `;
 
+  //TODO: add tooltip with alt text for image
+
   return (
     <div class="intro">
-      <Text dangerouslySetInnerHTML={{ __html: text}}></Text>
-      <Image />
+      <Text dangerouslySetInnerHTML={{ __html: text }}></Text>
+      <StyledImage/>
     </div>
   );
 }

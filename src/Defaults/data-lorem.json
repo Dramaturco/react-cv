@@ -1,0 +1,323 @@
+{
+  "content": {
+    "en": [
+      {
+        "type": "Intro",
+        "content": {
+          "text": "<span>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. <br>In vulputate orci vitae turpis <span>consectetur</span> ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus."
+        }
+      },
+      {
+        "title": "Languages",
+        "type": "Languagelist",
+        "content": [
+          {
+            "name": "German",
+            "fluency": 5,
+            "comments": [
+              "Reading",
+              "Writing",
+              "Conversations",
+              "Technical Jargon",
+              "Native Language"
+            ]
+          },
+          {
+            "name": "English",
+            "fluency": 4,
+            "comments": [
+              "Reading",
+              "Writing",
+              "Conversations",
+              "Technical Jargon"
+            ]
+          },
+          {
+            "name": "Turkish",
+            "fluency": 3,
+            "comments": [
+              "Reading",
+              "Writing",
+              "Conversations",
+              "Native Language"
+            ]
+          },
+          {
+            "name": "Italian",
+            "fluency": 4,
+            "comments": ["Reading", "Writing", "Conversations", "Technical Jargon"]
+          }
+        ]
+      },
+      {
+        "title": "Skills",
+        "type": "Skills",
+        "content": [
+          {
+            "proficiency": "Expert",
+            "skills": [
+              { "name": "React", "experience": "4 years" },
+              { "name": "JavaScript", "experience": "6 years" },
+              { "name": "Tailwind CSS", "experience": "2 years" },
+              { "name": "git", "experience": "6 years" },
+              { "name": "jest", "experience": "3 years" }
+            ],
+            "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "proficiency": "Advanced",
+            "skills": [
+              {
+                "name": "Photoshop",
+                "experience": "3 years"
+              },
+              { "name": "Docker", "experience": "3 years" },
+              { "name": "Stackoverflow", "experience": "3 years" }
+            ],
+            "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "proficiency": "Basic",
+            "skills": [
+              { "name": "Video editing", "experience": "1 year" }
+            ],
+            "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "proficiency": "Hobbies",
+            "skills": [
+              { "name": "🏃🏻‍♂️" },
+              { "name": "🏄🏻‍♂️" },
+              { "name": "🧘🏻‍♂️" },
+              { "name": "🎮" },
+              { "name": "🧩" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Projects",
+        "type": "Projects",
+        "content": [
+          {
+            "name": "soupe.js",
+            "abstract": "JavaScript Library",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu.",
+            "technologies": ["JavaScript", "tect.js"]
+          },
+          {
+            "name": "narch",
+            "abstract": "JavaScript Library",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu.",
+            "technologies": ["JavaScript", "tect.js", "coke.js", "pietile"]
+          }
+        ]
+      },
+      {
+        "title": "Timeline",
+        "type": "Timeline",
+        "content": [
+          {
+            "start": {
+              "year": "2015",
+              "month": "October"
+            },
+            "end": {
+              "year": "2018",
+              "month": "April"
+            },
+            "type": "Education",
+            "title": "Bachelors Degree at University of Bari",
+            "location": "Bari",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu."
+          },
+          {
+            "start": {
+              "year": "2018",
+              "month": "September"
+            },
+            "end": {
+              "year": "2020",
+              "month": "July"
+            },
+            "type": "Education",
+            "title": "Masters Degree at University of Bari",
+            "location": "Bari",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu."
+          },
+          {
+            "start": {
+              "year": "2021",
+              "month": "March"
+            },
+            "end": {
+              "year": "now"
+            },
+            "type": "Job",
+            "title": "Frontend Developer at the Made-Up Company",
+            "location": "Milano",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu.",
+            "projects": ["narch", "soupe.js"]
+          }
+        ]
+      }
+    ],
+    "de": [
+      {
+        "type": "Intro",
+        "content": {
+          "text": "<span>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. <br>In vulputate orci vitae turpis <span>consectetur</span> ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus."
+        }
+      },
+      {
+        "title": "Sprachen",
+        "type": "Languagelist",
+        "content": [
+          {
+            "name": "Deutsch",
+            "fluency": 5,
+            "comments": [
+              "Lesen",
+              "Schreiben",
+              "Konversationen",
+              "Fachsprache",
+              "Muttersprache"
+            ]
+          },
+          {
+            "name": "Englisch",
+            "fluency": 4,
+            "comments": ["Lesen", "Schreiben", "Konversationen", "Fachsprache"]
+          },
+          {
+            "name": "Türkisch",
+            "fluency": 3,
+            "comments": [
+              "Lesen",
+              "Schreiben",
+              "Konversationen",
+              "Muttersprache"
+            ]
+          },
+          {
+            "name": "Italienisch",
+            "fluency": 4,
+            "comments": ["Lesen", "Schreiben", "Konversationen", "Fachsprache"]
+          }
+        ]
+      },
+      {
+        "title": "Werdegang",
+        "type": "Timeline",
+        "content": [
+          {
+            "start": {
+              "year": "2015",
+              "month": "Oktober"
+            },
+            "end": {
+              "year": "2018",
+              "month": "April"
+            },
+            "type": "Bildung",
+            "title": "Bachelorstudium Universität von Bari",
+            "location": "Bari",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu."
+          },
+          {
+            "start": {
+              "year": "2018",
+              "month": "September"
+            },
+            "end": {
+              "year": "2020",
+              "month": "Juli"
+            },
+            "type": "Bildung",
+            "title": "Masterstudium Universität von Bari",
+            "location": "Bari",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu."
+          },
+          {
+            "start": {
+              "year": "2021",
+              "month": "März"
+            },
+            "end": {
+              "year": "Heute"
+            },
+            "type": "Job",
+            "title": "Frontend Developer bei der Made-Up Company",
+            "location": "Milano",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu.",
+            "projects": ["narch", "soupe.js"]
+          }
+        ]
+      },
+      {
+        "title": "Fähigkeiten",
+        "type": "Skills",
+        "content": [
+          {
+            "proficiency": "Experte",
+            "skills": [
+              { "name": "React", "experience": "4 Jahre" },
+              { "name": "JavaScript", "experience": "6 Jahre" },
+              { "name": "Tailwind CSS", "experience": "2 Jahre" },
+              { "name": "Jest", "experience": "3 Jahre" },
+              { "name": "git", "experience": "6 Jahre" }
+            ],
+            "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "proficiency": "Fortgeschritten",
+            "skills": [
+              {
+                "name": "Photoshop",
+                "experience": "3 Jahre"
+              },
+              { "name": "Kubernetes", "experience": "3 Jahre" },
+              { "name": "Helm", "experience": "3 Jahre" }
+            ],
+            "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "proficiency": "Grundlagen",
+            "skills": [
+              { "name": "Videobearbeitung", "experience": "1 Jahr" }
+            ],
+            "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "proficiency": "Hobbies",
+            "skills": [
+              { "name": "🏃🏻‍♂️" },
+              { "name": "🏄🏻‍♂️" },
+              { "name": "🧘🏻‍♂️" },
+              { "name": "🎮" },
+              { "name": "🧩" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Projekte",
+        "type": "Projects",
+        "content": [
+          {
+            "name": "soupe.js",
+            "abstract": "JavaScript Library",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu.",
+            "technologies": ["JavaScript", "tect.js"]
+          },
+          {
+            "name": "narch",
+            "abstract": "JavaScript Library",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu.",
+            "technologies": ["JavaScript", "tect.js", "coke.js", "pietile"]
+          }
+        ]
+      }
+    ]
+  }
+}

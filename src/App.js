@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { render } from "react-dom";
 import Page from "./Page";
 import LanguageContext from "./LanguageContext";
-import * as data from "../assets/data/data.json";
+import * as data from "./defaults/data-lorem.json";
 
 const App = () => {
   const language = useState({ code: "de", name: { en: "German", de: "Deutsch" } });
