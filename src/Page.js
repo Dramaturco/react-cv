@@ -1,7 +1,7 @@
-import { useContext } from "react";
+import { Fragment, useContext } from "react";
 import LanguageContext from "./LanguageContext";
 import ThemeContext from "./ThemeContext";
-import { LanguageList, SkillList } from "./FactsAndSkills";
+import { SkillList } from "./FactsAndSkills";
 import { Timeline } from "./Timeline";
 import { Intro } from "./TopBar";
 
@@ -31,27 +31,25 @@ const Page = ({ content }) => {
   );
 
   timelineData.content = timelineData.content.map((entry) => {
-    if(entry.projects){
+    if (entry.projects) {
+      console.log(entry.projects);
       entry.projects = entry.projects.map((project) =>
-        projectData.content.find((projectEntry) => projectEntry.name === project)
+        projectData.content.find(
+          (projectEntry) => projectEntry.name === project
+        )
       );
       entry.projects = {
         content: entry.projects,
-        title: projectData.title
-      }
+        title: projectData.title,
+      };
     }
     return entry;
   });
 
-  console.log(timelineData)
-
   return (
     <ThemeContext.Provider value={theme}>
       <div className="page">
-        <Intro
-          text={introData.content.text}
-          imageUrl={imageUrl}
-        />
+        <Intro text={introData.content.text} imageUrl={imageUrl} />
         <div className="grid-container">
           <div className="left-column">
             <h3>{timelineData.title}</h3>
@@ -59,14 +57,16 @@ const Page = ({ content }) => {
           </div>
           <div className="right-column">
             <h3>{languageData.title}</h3>
-            <LanguageList list={languageData.content} />
+            <SkillList list={languageData.content} />
             <h3>{skillData.title}</h3>
             {skillData.content.map((skillset) => (
-              <SkillList
-                skills={skillset.skills}
-                proficiency={skillset.proficiency}
-                tooltip={skillset.tooltip}
-              />
+              <Fragment key={skillset.proficiency}>
+                <h4>{skillset.proficiency}</h4>
+                <SkillList
+                  list={skillset.skills}
+                  key={skillset.proficiency}
+                />
+              </Fragment>
             ))}
           </div>
         </div>

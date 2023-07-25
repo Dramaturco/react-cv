@@ -13,7 +13,7 @@
         "content": [
           {
             "name": "German",
-            "fluency": 5,
+            "rating": 5,
             "comments": [
               "Reading",
               "Writing",
@@ -24,7 +24,7 @@
           },
           {
             "name": "English",
-            "fluency": 4,
+            "rating": 4,
             "comments": [
               "Reading",
               "Writing",
@@ -34,7 +34,7 @@
           },
           {
             "name": "Turkish",
-            "fluency": 3,
+            "rating": 3,
             "comments": [
               "Reading",
               "Writing",
@@ -44,7 +44,7 @@
           },
           {
             "name": "Italian",
-            "fluency": 4,
+            "rating": 4,
             "comments": ["Reading", "Writing", "Conversations", "Technical Jargon"]
           }
         ]
@@ -175,7 +175,7 @@
         "content": [
           {
             "name": "Deutsch",
-            "fluency": 5,
+            "rating": 5,
             "comments": [
               "Lesen",
               "Schreiben",
@@ -186,12 +186,12 @@
           },
           {
             "name": "Englisch",
-            "fluency": 4,
+            "rating": 4,
             "comments": ["Lesen", "Schreiben", "Konversationen", "Fachsprache"]
           },
           {
             "name": "Türkisch",
-            "fluency": 3,
+            "rating": 3,
             "comments": [
               "Lesen",
               "Schreiben",
@@ -201,7 +201,7 @@
           },
           {
             "name": "Italienisch",
-            "fluency": 4,
+            "rating": 4,
             "comments": ["Lesen", "Schreiben", "Konversationen", "Fachsprache"]
           }
         ]
@@ -261,11 +261,11 @@
           {
             "proficiency": "Experte",
             "skills": [
-              { "name": "React", "experience": "4 Jahre" },
-              { "name": "JavaScript", "experience": "6 Jahre" },
-              { "name": "Tailwind CSS", "experience": "2 Jahre" },
-              { "name": "Jest", "experience": "3 Jahre" },
-              { "name": "git", "experience": "6 Jahre" }
+              { "name": "React", "experience": "4 Jahre", "rating": 5 },
+              { "name": "JavaScript", "experience": "6 Jahre", "rating": 4 },
+              { "name": "Tailwind CSS", "experience": "2 Jahre", "rating": 5 },
+              { "name": "Jest", "experience": "3 Jahre", "rating": 4 },
+              { "name": "git", "experience": "6 Jahre", "rating": 5 }
             ],
             "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           },
@@ -274,17 +274,17 @@
             "skills": [
               {
                 "name": "Photoshop",
-                "experience": "3 Jahre"
+                "experience": "3 Jahre", "rating": 2
               },
-              { "name": "Kubernetes", "experience": "3 Jahre" },
-              { "name": "Helm", "experience": "3 Jahre" }
+              { "name": "Kubernetes", "experience": "3 Jahre", "rating": 2 },
+              { "name": "Helm", "experience": "3 Jahre", "rating": 2 }
             ],
             "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           },
           {
             "proficiency": "Grundlagen",
             "skills": [
-              { "name": "Videobearbeitung", "experience": "1 Jahr" }
+              { "name": "Videobearbeitung", "experience": "1 Jahr", "rating": 2 }
             ],
             "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           },
