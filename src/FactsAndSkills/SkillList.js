@@ -1,18 +1,17 @@
-import ToolTip from "../Generic/ToolTip";
 import SkillEntry from "./SkillEntry";
+import { Fragment } from "react";
 
-const SkillList = ({ skills, proficiency, tooltip }) => {
+const SkillList = ({ list }) => {
   return (
-    <div>
-      <ToolTip text={tooltip}>
-        <h4>{proficiency}</h4>
-          </ToolTip>
-        <ul className="skill-list">
-          {skills.map((skill) => (
-            <SkillEntry skill={skill} />
-          ))}
-        </ul>
-    </div>
+    <Fragment>
+      {list.map((skill) => (
+        <SkillEntry
+          name={skill.name}
+          rating={skill.rating}
+          key={skill.name}
+        />
+      ))}
+    </Fragment>
   );
 };
 

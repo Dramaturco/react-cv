@@ -35,7 +35,7 @@ function Intro({ text, imageUrl }) {
 
 Intro.propTypes = {
   text: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
+  imageUrl: PropTypes.object.isRequired,
   alt: PropTypes.string,
 };
 

@@ -2,7 +2,6 @@
   "name": "react-cv",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "prettier": "^2.5.1",
     "prop-types": "^15.8.1",
@@ -22,7 +21,8 @@
   },
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
   },
   "keywords": [],
   "author": "",
