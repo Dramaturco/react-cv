@@ -5,6 +5,7 @@ import { SkillList } from "./FactsAndSkills";
 import { Timeline } from "./Timeline";
 import { Intro } from "./TopBar";
 import Hobbies from "./FactsAndSkills/Hobbies";
+import {Contact} from "./Footer";
 
 const Page = ({ content }) => {
   const [selectedLanguage] = useContext(LanguageContext);
@@ -33,7 +34,10 @@ const Page = ({ content }) => {
   const hobbyData = content[selectedLanguage.code].find(
     (section) => section.type === "hobbies"
   );
-
+  const contactData = content[selectedLanguage.code].find(
+    (section) => section.type === "Contact"
+  );
+  console.log(contactData)
 
   timelineData.content = timelineData.content.map((entry) => {
     if (entry.projects) {
@@ -74,9 +78,10 @@ const Page = ({ content }) => {
               </Fragment>
             ))}
             <h3>{hobbyData.title}</h3>
-            <Hobbies hobbies={hobbyData.content} />
+            <Hobbies hobbies={hobbyData.content} />            
           </div>
         </div>
+        <Contact contactData={contactData.content}/>
       </div>
     </ThemeContext.Provider>
   );

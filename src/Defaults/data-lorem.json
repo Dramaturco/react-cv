@@ -176,6 +176,18 @@
             "projects": ["narch", "soupe.js"]
           }
         ]
+      },
+      {
+        "title": "Contact",
+        "type": "Contact",
+        "content": {
+          "emailTitle": "Mail me",
+          "email": "lorem@ipsum.it",
+          "phoneTitle": "Call me",
+          "phone": "+39 4 8 15 16 23 42",
+          "motivation": "Want me to work for you?",
+          "goodBye": "Thank you"
+        }
       }
     ],
     "de": [
@@ -354,6 +366,18 @@
             "technologies": ["JavaScript", "tect.js", "coke.js", "pietile"]
           }
         ]
+      },
+      {
+        "title": "Kontakt",
+        "type": "Contact",
+        "content": {
+          "emailTitle": "Schreib mir",
+          "email": "lorem@ipsum.it",
+          "phoneTitle": "Ruf mich an",
+          "phone": "+39 4 8 15 16 23 42",
+          "motivation": "Möchtest du meine Dienste Erwerben?",
+          "goodBye": "Danke"
+        }
       }
     ]
   }
