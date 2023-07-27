@@ -82,16 +82,32 @@
               { "name": "Video editing", "experience": "1 year" }
             ],
             "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        ]
+      },
+      {
+        "title": "Hobbies",
+        "type": "hobbies",
+        "content": [
+          {
+            "emoji": "🏃🏻‍♂️",
+            "name": "Running"
           },
           {
-            "proficiency": "Hobbies",
-            "skills": [
-              { "name": "🏃🏻‍♂️" },
-              { "name": "🏄🏻‍♂️" },
-              { "name": "🧘🏻‍♂️" },
-              { "name": "🎮" },
-              { "name": "🧩" }
-            ]
+            "emoji": "🏄🏻‍♂️",
+            "name": "Surfing"
+          },
+          {
+            "emoji": "🧘🏻‍♂️",
+            "name": "Yoga"
+          },
+          {
+            "emoji": "🎮",
+            "name": "Gaming"
+          },
+          {
+            "emoji": "🧩",
+            "name": "Puzzles"
           }
         ]
       },
@@ -287,16 +303,37 @@
               { "name": "Videobearbeitung", "experience": "1 Jahr", "rating": 2 }
             ],
             "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        ]
+      },
+      {
+        "title": "Hobbies",
+        "type": "hobbies",
+        "content": [
+          {
+            "emoji": "🏃🏻‍♂️",
+            "name": "Laufen",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu."
           },
           {
-            "proficiency": "Hobbies",
-            "skills": [
-              { "name": "🏃🏻‍♂️" },
-              { "name": "🏄🏻‍♂️" },
-              { "name": "🧘🏻‍♂️" },
-              { "name": "🎮" },
-              { "name": "🧩" }
-            ]
+            "emoji": "🏄🏻‍♂️",
+            "name": "Surfen",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu."
+          },
+          {
+            "emoji": "🧘🏻‍♂️",
+            "name": "Yoga",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu."
+          },
+          {
+            "emoji": "🎮",
+            "name": "Gaming",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu."
+          },
+          {
+            "emoji": "🧩",
+            "name": "Puzzles",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci vitae turpis consectetur ultrices. Etiam euismod, velit tristique vestibulum ultricies, purus erat sodales urna, id scelerisque ipsum sem ac purus. Fusce ac metus at elit pellentesque consequat. Fusce ac nulla et mi condimentum vehicula quis id arcu. Morbi eu."
           }
         ]
       },

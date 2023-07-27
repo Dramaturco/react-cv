@@ -4,7 +4,7 @@ const ToolTip = ({ children, text }) => {
   const [hover, setHover] = useState(false);
   const [animationClass, setAnimationClass] = useState("");
   return (
-    <div
+    <span
       className="tooltip-wrapper"
       onMouseEnter={() => {
         setHover(true);
@@ -14,7 +14,7 @@ const ToolTip = ({ children, text }) => {
     >
       {children}
       {hover && <div className={`tooltip-box ${animationClass}`}>{text}</div>}
-    </div>
+    </span>
   );
 };
 export default ToolTip;
