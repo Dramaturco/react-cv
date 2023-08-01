@@ -8,13 +8,8 @@ const Timeline = ({ entries }) => {
         .map((entry, index) => (
           <Fragment>
             <TimelineEntry
-              title={entry.title}
-              start={entry.start}
-              end={entry.end}
-              type={entry.type}
-              text={entry.text}
-              projects={entry.projects}
               key={entry.title}
+              {...entry}
             />
             {index < entries.length - 1 && (
               <div className="vertical-line"></div>

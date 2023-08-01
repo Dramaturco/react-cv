@@ -26,7 +26,7 @@ function Intro({ text, imageUrl }) {
   //TODO: add tooltip with alt text for image
 
   return (
-    <div class="intro">
+    <div className="intro gradient">
       <Text dangerouslySetInnerHTML={{ __html: text }}></Text>
       <StyledImage/>
     </div>

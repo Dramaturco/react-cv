@@ -12,7 +12,7 @@ const TimelineEntry = ({ title, text, start, end, type, projects }) => {
     font-weight: 800;
     line-height: 2.375rem; /* 135.714% */
   `;
-  console.log(projects);
+
   return (
     <div className="timeline-entry">
       <div>

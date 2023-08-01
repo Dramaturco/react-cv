@@ -5,7 +5,6 @@ import { styled } from "styled-components";
 
 const SkillEntry = ({ name, rating, comments }) => {
 
-  console.log(name,rating)
   const Entry = styled.div`
     display: flex;
     padding: 1rem;
