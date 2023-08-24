@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import ToolTip from "../Generic/ToolTip";
+import LanguageSwitch from "./LanguageSwitch";
 
 function Intro({ text, imageUrl }) {
   const Text = styled.p`
@@ -27,6 +27,7 @@ function Intro({ text, imageUrl }) {
 
   return (
     <div className="intro gradient">
+      <LanguageSwitch />
       <Text dangerouslySetInnerHTML={{ __html: text }}></Text>
       <StyledImage/>
     </div>

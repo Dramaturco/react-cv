@@ -39,7 +39,7 @@ const Page = ({ content }) => {
   );
 
   timelineData.content = timelineData.content.map((entry) => {
-    if (entry.projects) {
+    if (Array.isArray(entry.projects)) {
       entry.projects = entry.projects.map((project) =>
         projectData.content.find(
           (projectEntry) => projectEntry.name === project

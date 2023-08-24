@@ -10,7 +10,7 @@ const LanguageSwitch = () => {
     <div className="language-switch no-print">
       {languages.map((language) => (
         <div key={language.code} className={`item${selectedLanguage.code === language.code ? " selected" : ""}`} onClick={() => setLanguage(language)}>
-          {language.code}
+          {language.name[selectedLanguage.code]}
         </div>
       ))}
     </div>
