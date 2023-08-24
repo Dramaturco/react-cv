@@ -2,7 +2,13 @@ import { styled } from "styled-components";
 const FooterLink = ({ url, onClick, className, children, newTab }) => {
   const Link = styled.a`
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    width: 20rem;
   `;
+
   return (
     <div>
       <Link
