@@ -4,32 +4,16 @@ import styled from "styled-components";
 import LanguageSwitch from "./LanguageSwitch";
 
 function Intro({ text, imageUrl }) {
-  const Text = styled.p`
-    color: #fff;
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 4.625rem; /* 115.625% */
-  `;
 
-  const StyledImage = styled.div`
-    width: 16rem;
-    height: 16rem;
-    border-radius: 1rem;
-    background: url(${imageUrl}), lightgray 50% / cover no-repeat;
-    box-shadow: 0px 3px 9px 0px rgba(103, 54, 207, 0.5);
-    position: absolute;
-    bottom: -8rem;
-    right: 10rem;
-  `;
+  const backgroundImage = `url(${imageUrl})`;
 
   //TODO: add tooltip with alt text for image
 
   return (
     <div className="intro gradient">
       <LanguageSwitch />
-      <Text dangerouslySetInnerHTML={{ __html: text }}></Text>
-      <StyledImage/>
+      <p className="intro-text" dangerouslySetInnerHTML={{ __html: text }}></p>
+      <div className="avatar" style={{backgroundImage}}></div>
     </div>
   );
 }
