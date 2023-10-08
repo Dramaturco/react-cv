@@ -6,9 +6,11 @@
   margin-bottom: 2rem;
 }
 .timeline-entry h4 {
-  font-size: larger;
-  margin: 0;
-  /*text-decoration: underline var(--comment-background);*/
+  color: var(--accent-color);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.375rem; /* 135.714% */
 }
 .timeline-date {
   text-align: center;
