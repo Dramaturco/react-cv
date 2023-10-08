@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import FooterLink from "./FooterLink";
-import { AiFillGithub, AiFillPrinter } from "react-icons/ai";
 import ThemeContext from "../ThemeContext";
 
 function Footer() {
