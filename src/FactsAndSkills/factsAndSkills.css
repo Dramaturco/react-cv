@@ -52,3 +52,19 @@
   font-size: 4rem;
   margin: 0.5em;
 }
+.skill-entry {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating-frame {
+  width: 25rem;
+  background: #E1E1E1;
+  height: 1rem;
+}
+.rating-bar {
+  background: #303030;
+  height: 1rem;
+}

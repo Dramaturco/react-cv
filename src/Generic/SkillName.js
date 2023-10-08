@@ -8,7 +8,7 @@ export default function SkillName(props) {
   display: flex;
     color: #FFFFFF;
     border-radius: 1.25rem;
-    width: 6rem;
+    width: 8rem;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     justify-content: center;
     align-items: center; 
