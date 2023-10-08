@@ -12,7 +12,7 @@ const Page = ({ content }) => {
   const [theme, setTheme] = useContext(ThemeContext);
 
   const imageUrl = new URL(
-    "../assets/images/emre.jpg?as=webp&width=256",
+    "./Defaults/cat.jpg?as=webp&width=256",
     import.meta.url
   );
 

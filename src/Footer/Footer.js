@@ -1,36 +1,15 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
+import React from "react";
 import FooterLink from "./FooterLink";
 import ThemeContext from "../ThemeContext";
 
 function Footer() {
   const theme = React.useContext(ThemeContext);
 
-  const Footer = styled.div`
-    padding: 4rem;
-    display: flex;
-  `;
-  const FooterLinks = styled.div`
-    display: block;
-    width: 50%;
-  `;
-
-  const LinkIcon = styled.div`
-    margin-right: 1.5rem;
-  `;
-  const LinkText = styled.div`
-    color: white;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-    text-decoration: none;
-    height: 2.4rem;
-  `;
-
   return (
-    <Footer className="gradient">
-      <FooterLinks>
+    <footer className="gradient">
+      <div className="footer-links">
         <FooterLink onClick={() => window.print()} className="no-print">
-          <LinkIcon>
+          <div className="link-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="38"
@@ -44,16 +23,16 @@ function Footer() {
                 fill="white"
               />
             </svg>
-          </LinkIcon>
+          </div>
 
-          <LinkText>{"Print this page"}</LinkText>
+          <div className="link-text">{"Print this page"}</div>
         </FooterLink>
         <FooterLink
           className="no-print"
           url="https://github.com/dramaturco/react-cv"
           newTab
         >
-          <LinkIcon>
+          <div className="link-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="38"
@@ -67,11 +46,11 @@ function Footer() {
                 fill={theme.accentColor}
               />
             </svg>
-          </LinkIcon>
-          <LinkText>{"Source code"}</LinkText>
+          </div>
+          <div className="link-text">{"Source code"}</div>
         </FooterLink>
-      </FooterLinks>
-    </Footer>
+      </div>
+    </footer>
   );
 }
 

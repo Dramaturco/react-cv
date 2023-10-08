@@ -4,6 +4,7 @@
 @import url("TopBar/TopBar.css");
 @import url("Projects/Projects.css");
 @import url("Generic/generic.css");
+@import url("Footer/footer.css");
 
 :root {
   --border-color: #3f59ac;
