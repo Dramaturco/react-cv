@@ -1,5 +1,5 @@
 import { Rating } from "../Generic";
-import SkillName from "../Generic/SkillName";
+import SkillName from "./SkillName";
 
 const SkillEntry = ({ name, rating, comments }) => {
 
